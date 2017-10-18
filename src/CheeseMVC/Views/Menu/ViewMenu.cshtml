@@ -1,0 +1,14 @@
+﻿@model CheeseMVC.ViewModels.ViewMenuViewModel
+
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li> @item.Menu.Name</li>
+
+    }
+
+
+</ul>
+
+<p><a asp-route="@Model.Menu.ID" asp-action="AddItem">Add Item</a></p>
